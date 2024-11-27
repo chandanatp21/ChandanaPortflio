@@ -1,0 +1,231 @@
+/* GLOBAL STYLES-------------------- */
+
+html{
+    box-sizing: border-box;
+}
+
+::before,*::after{
+    box-sizing: inherit;
+}
+
+html,body {
+    height: 100%;
+
+
+body {
+    background: #f6f6f6;
+    margin: 0;
+    font-family: "Outfit",serif;
+}
+
+h2,h1{
+    font-family: "Caveat",cursive;
+    font-weight: 900;
+
+}
+
+h3{
+    font-family: "Oleo Script",cursive;
+    color: rgb(69, 162, 199);
+    font-weight: 400;
+}
+
+p
+{
+    font-family: "EB Garamond",cursive;
+    color: #0e0f0f;
+    font-weight: 100;
+}
+
+.project-item h3{
+    font-family: "Oleo Script",cursive;
+    color: rgb(12, 12, 12);
+    font-weight: 400;
+}
+
+.content-wrapper{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 30px;
+}
+
+
+/* Links------------------ */
+a{
+    color: #3c8453;
+}
+
+/*Pseudo elements*/
+a:hover{
+    color: #bcaabc;
+}
+
+.btn{
+    
+    background: rgb(82, 186, 221);
+    color: #f6f6f6;
+    text-decoration:none;
+    padding: 10px 20px;
+    border-radius: 15px; /* Makes the edges curved */
+    border: none;
+}
+
+.project-item{
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img{
+    width: 400px;
+    float: left;
+    margin-right: 10px;
+}
+.homepage
+{
+    background: rgb(82, 186, 221);
+    color:white;
+    text-decoration:none;
+    padding: 10px 20px;
+    border-radius: 15px; /* Makes the edges curved */
+    border: none;
+    
+}
+/* HOME ---------------------- */
+.home {
+    background-image: url(../starter-files/placeholder-images/bg-home-office-studio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .content-wrapper {
+    
+    flex: 1 0 auto;
+}
+.container
+{
+    padding:30px;
+    background: antiquewhite;
+
+}
+/* RESUME -------------------- */
+.resume header::before{
+    background-image: url(../starter-files/placeholder-images/bg-home-office-studio.jpg);
+    background-size:cover;
+    display: block;
+    height: 375px;
+    content: "";
+    background-repeat: no-repeat;
+}
+ 
+.fixed {
+    background: rgb(82, 186, 221);
+    position: absolute; 
+    color: white;
+    top: 0; 
+     left: 0; 
+     padding: 10px 15px;
+     text-decoration: none;
+    
+     border-radius: 15px;
+}
+
+  .resumebutton
+  {
+    background:black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:white;
+  }
+
+  
+
+  .resume-section h2
+  {
+    border-bottom: 2px dashed #0e0f0f;
+  }
+
+  a:hover{
+    color: black;
+  }
+
+  .mainclass a:hover{
+    color:green;
+  }
+/* Profile Summary ------------------- */
+
+
+/* Projects ------------------------- */
+
+
+/* Education ----------------- */
+
+
+/* Certifications ------------------------- */
+
+
+/* Technical Skills --------------------- */
+
+
+
+/* Achievements ------------------------- */
+
+
+/* Footer ---------------------- */
+
+
+
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center-align icons */
+    margin: 10px 0;
+    position: relative; /* Changed from fixed to relative for better layout control */
+}
+
+.socials li {
+    margin: 0 10px; /* Add spacing between icons */
+    display: inline-block;
+}
+
+.socials img {
+    width: 2rem;
+    height: 2rem; /* Ensure consistent size */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.socials img:hover {
+    transform: scale(1.2); /* Enlarge slightly on hover */
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between; /* Adjust footer content alignment */
+    align-items: center;
+    padding: 10px 20px;
+    color: antiquewhite;
+    flex-wrap: wrap; /* Ensure it adapts on smaller screens */
+}
+
+footer a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #144419;
+}
+
+.resume-section p{
+    font-family: "EB Garamond",cursive;
+    color: #0e0f0f;
+    font-weight: 500;
+}}
+footer p{
+    color: antiquewhite;
+}
