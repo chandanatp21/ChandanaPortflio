@@ -1,95 +1,95 @@
 /* GLOBAL STYLES-------------------- */
 
-html {
+html{
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+::before,*::after{
     box-sizing: inherit;
 }
 
-html, body {
+html,body {
     height: 100%;
-}
+
 
 body {
     background: #f6f6f6;
     margin: 0;
-    font-family: "Outfit", serif;
+    font-family: "Outfit",serif;
 }
 
-h2, h1 {
-    font-family: "Caveat", cursive;
+h2,h1{
+    font-family: "Caveat",cursive;
     font-weight: 900;
+
 }
 
-h3 {
-    font-family: "Oleo Script", cursive;
+h3{
+    font-family: "Oleo Script",cursive;
     color: rgb(69, 162, 199);
     font-weight: 400;
 }
 
-p {
-    font-family: "EB Garamond", cursive;
+p
+{
+    font-family: "EB Garamond",cursive;
     color: #0e0f0f;
     font-weight: 100;
 }
 
-.project-item h3 {
-    font-family: "Oleo Script", cursive;
+.project-item h3{
+    font-family: "Oleo Script",cursive;
     color: rgb(12, 12, 12);
     font-weight: 400;
 }
 
-.content-wrapper {
+.content-wrapper{
     margin: 0 auto;
     max-width: 900px;
     padding: 30px;
 }
 
+
 /* Links------------------ */
-a {
+a{
     color: #3c8453;
 }
 
-/* Pseudo elements */
-a:hover {
+/*Pseudo elements*/
+a:hover{
     color: #bcaabc;
 }
 
-.btn {
+.btn{
+    
     background: rgb(82, 186, 221);
     color: #f6f6f6;
-    text-decoration: none;
+    text-decoration:none;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 15px; /* Makes the edges curved */
     border: none;
 }
 
-.project-item {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.project-item{
+    display: flow-root;
     margin: 30px 0;
-    align-items: center;
-    justify-content: center;
 }
 
-.project-item img {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 10px;
+.project-item img{
+    width: 400px;
+    float: left;
+    margin-right: 10px;
 }
-
-.homepage {
+.homepage
+{
     background: rgb(82, 186, 221);
-    color: white;
-    text-decoration: none;
+    color:white;
+    text-decoration:none;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 15px; /* Makes the edges curved */
     border: none;
+    
 }
-
 /* HOME ---------------------- */
 .home {
     background-image: url(bg-home-office-studio.jpg);
@@ -97,94 +97,119 @@ a:hover {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .home .content-wrapper {
+    
     flex: 1 0 auto;
 }
-
-.container {
-    padding: 30px;
+.container
+{
+    padding:30px;
     background: antiquewhite;
-}
 
+}
 /* RESUME -------------------- */
-.resume header::before {
+.resume header::before{
     background-image: url(bg-home-office-studio.jpg);
-    background-size: cover;
+    background-size:cover;
     display: block;
     height: 375px;
     content: "";
     background-repeat: no-repeat;
 }
-
+ 
 .fixed {
     background: rgb(82, 186, 221);
-    position: fixed; 
+    position: absolute; 
     color: white;
     top: 0; 
-    left: 0; 
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 15px;
+     left: 0; 
+     padding: 10px 15px;
+     text-decoration: none;
+    
+     border-radius: 15px;
 }
 
-.resumebutton {
-    background: black;
+  .resumebutton
+  {
+    background:black;
     border-radius: 15px;
     padding: 5px 10px;
     text-decoration: none;
-    color: white;
-}
+    color:white;
+  }
 
-.resume-section h2 {
+  
+
+  .resume-section h2
+  {
     border-bottom: 2px dashed #0e0f0f;
-}
+  }
 
-a:hover {
+  a:hover{
     color: black;
-}
+  }
 
-.mainclass a:hover {
-    color: green;
-}
+  .mainclass a:hover{
+    color:green;
+  }
+/* Profile Summary ------------------- */
+
+
+/* Projects ------------------------- */
+
+
+/* Education ----------------- */
+
+
+/* Certifications ------------------------- */
+
+
+/* Technical Skills --------------------- */
+
+
+
+/* Achievements ------------------------- */
+
 
 /* Footer ---------------------- */
+
+
+
 
 .socials {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center-align icons */
     margin: 10px 0;
+    position: relative; /* Changed from fixed to relative for better layout control */
 }
 
 .socials li {
-    margin: 0 10px;
+    margin: 0 10px; /* Add spacing between icons */
     display: inline-block;
 }
 
 .socials img {
     width: 2rem;
-    height: 2rem;
-    transition: transform 0.3s ease;
+    height: 2rem; /* Ensure consistent size */
+    transition: transform 0.3s ease; /* Add hover effect */
 }
 
-socials img:hover {
-    transform: scale(1.2);
+.socials img:hover {
+    transform: scale(1.2); /* Enlarge slightly on hover */
 }
 
 footer {
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Adjust footer content alignment */
     align-items: center;
     padding: 10px 20px;
     color: antiquewhite;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-wrap: wrap; /* Ensure it adapts on smaller screens */
 }
 
 footer a {
@@ -196,86 +221,11 @@ footer a:hover {
     color: #144419;
 }
 
-.resume-section p {
-    font-family: "EB Garamond", cursive;
+.resume-section p{
+    font-family: "EB Garamond",cursive;
     color: #0e0f0f;
     font-weight: 500;
-}
-
-footer p {
+}}
+footer p{
     color: antiquewhite;
-}
-
-/* RESPONSIVE DESIGN -------------------- */
-
-/* Small Screens (mobile devices) */
-@media screen and (max-width: 768px) {
-    .content-wrapper {
-        padding: 15px;
-        max-width: 100%;
-    }
-
-    .home {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .project-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .project-item img {
-        margin: 0 auto 10px auto;
-    }
-
-    h2, h3 {
-        font-size: 1.5rem;
-    }
-
-    .btn, .homepage {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-
-    .socials img {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 10px;
-    }
-}
-
-/* Very Small Screens (e.g., smaller phones) */
-@media screen and (max-width: 480px) {
-    .resume header::before {
-        height: 250px;
-    }
-
-    h1, h2, h3 {
-        font-size: 1.2rem;
-    }
-
-    .btn, .homepage {
-        font-size: 0.8rem;
-        padding: 6px 12px;
-    }
-
-    .project-item img {
-        width: 100%;
-    }
-
-    .socials img {
-        width: 1.2rem;
-        height: 1.2rem;
-    }
-
-    footer p {
-        font-size: 0.8rem;
-    }
 }
